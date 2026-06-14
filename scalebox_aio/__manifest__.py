@@ -63,6 +63,6 @@ keeping all accounting and inventory postings valid and compatible with standard
     'installable': True,
     'auto_install': False,
     'price': 99,
-    'currency': 'SAR',
+    'currency': 'USD',
     
 }
