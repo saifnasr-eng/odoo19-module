@@ -9,7 +9,7 @@
     'description': """
 Scalebox All-in-One ERP
 =======================
-A simplified layer on top of Odoo 18 Community for small businesses (up to 10 users).
+A simplified layer on top of Odoo 19 Community for small businesses (up to 10 users).
 
 - Easy Sale screen: sale order + stock delivery + invoice + payment in one step.
 - Easy Purchase screen: purchase order + stock receipt + vendor bill + payment in one step.
@@ -62,4 +62,7 @@ keeping all accounting and inventory postings valid and compatible with standard
     'application': True,
     'installable': True,
     'auto_install': False,
+    'price': 99,
+    'currency': 'SAR',
+    
 }
