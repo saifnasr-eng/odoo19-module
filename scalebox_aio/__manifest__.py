@@ -3,7 +3,7 @@
 # Copyright (C) 2026 Scalebox For Digital Services. All Rights Reserved.
 {
     'name': 'Scalebox All-in-One ERP',
-    'version': '19.0.7.0.2',
+    'version': '19.0.7.0.3',
     'price': 99.00,
     'currency': 'USD',
     'category': 'Accounting/Accounting',
@@ -34,34 +34,3 @@ keeping all accounting and inventory postings valid and compatible with standard
     'depends': [
         'base',
         'mail',
-        'product',
-        'sale_management',
-        'purchase',
-        'stock',
-        'account',
-        'point_of_sale',
-        'hr_expense',
-    ],
-    'data': [
-        'security/ir.model.access.csv',
-        'views/scalebox_menu.xml',
-        'views/sale_views.xml',
-        'views/purchase_views.xml',
-        'views/stock_views.xml',
-        'views/account_views.xml',
-        'views/expense_views.xml',
-        'views/report_views.xml',
-        'views/dashboard_views.xml',
-        'data/expense_type_data.xml',
-    ],
-    'assets': {
-        'web.assets_backend': [
-            'scalebox_aio/static/src/js/dashboard.js',
-            'scalebox_aio/static/src/css/dashboard.css',
-        ],
-    },
-    'images': ['static/description/banner.png'],
-    'installable': True,
-    'application': True,
-    'auto_install': False,
-}
