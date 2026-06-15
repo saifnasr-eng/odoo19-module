@@ -3,7 +3,7 @@
 # Copyright (C) 2026 Scalebox For Digital Services. All Rights Reserved.
 {
     'name': 'Scalebox All-in-One ERP',
-    'version': '19.0.7.0.3',
+    'version': '19.0.7.0.4',
     'price': 99.00,
     'currency': 'USD',
     'category': 'Accounting/Accounting',
