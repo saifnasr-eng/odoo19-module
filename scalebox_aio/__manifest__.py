@@ -64,5 +64,4 @@ keeping all accounting and inventory postings valid and compatible with standard
     'auto_install': False,
     'price': 99,
     'currency': 'USD',
-    
 }
