@@ -11,6 +11,7 @@
     'description': """
 Scalebox All-in-One ERP
 =======================
+
 A simplified layer on top of Odoo 19 Community for small businesses (up to 10 users).
 
 - Easy Sale screen: sale order + stock delivery + invoice + payment in one step.
@@ -36,3 +37,31 @@ keeping all accounting and inventory postings valid and compatible with standard
         'product',
         'sale_management',
         'purchase',
+        'stock',
+        'account',
+        'point_of_sale',
+        'hr_expense',
+    ],
+    'data': [
+        'security/ir.model.access.csv',
+        'views/scalebox_menu.xml',
+        'views/sale_views.xml',
+        'views/purchase_views.xml',
+        'views/stock_views.xml',
+        'views/account_views.xml',
+        'views/expense_views.xml',
+        'views/report_views.xml',
+        'views/dashboard_views.xml',
+        'data/expense_type_data.xml',
+    ],
+    'assets': {
+        'web.assets_backend': [
+            'scalebox_aio/static/src/js/dashboard.js',
+            'scalebox_aio/static/src/css/dashboard.css',
+        ],
+    },
+    'images': ['static/description/banner.png'],
+    'installable': True,
+    'application': True,
+    'auto_install': False,
+}
