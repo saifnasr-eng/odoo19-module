@@ -3,15 +3,12 @@
 # Copyright (C) 2026 Scalebox For Digital Services. All Rights Reserved.
 {
     'name': 'Scalebox All-in-One ERP',
-    'version': '19.0.7.0.4',
-    'price': 99.00,
-    'currency': 'USD',
+    'version': '19.0.7.0.1',
     'category': 'Accounting/Accounting',
     'summary': 'Simple all-in-one ERP: sales, purchases, inventory, accounting, POS and reports in one app',
     'description': """
 Scalebox All-in-One ERP
 =======================
-
 A simplified layer on top of Odoo 19 Community for small businesses (up to 10 users).
 
 - Easy Sale screen: sale order + stock delivery + invoice + payment in one step.
@@ -34,3 +31,37 @@ keeping all accounting and inventory postings valid and compatible with standard
     'depends': [
         'base',
         'mail',
+        'product',
+        'sale_management',
+        'purchase',
+        'stock',
+        'account',
+        'point_of_sale',
+        'loyalty',
+        'sale_loyalty',
+        'pos_loyalty',
+        'stock_landed_costs',
+    ],
+    'data': [
+        'security/scalebox_security.xml',
+        'security/ir.model.access.csv',
+        'data/sequences.xml',
+        'views/easy_sale_views.xml',
+        'views/easy_purchase_views.xml',
+        'views/expense_views.xml',
+        'views/return_views.xml',
+        'views/financial_report_views.xml',
+        'views/wizard_report_views.xml',
+        'views/operations_views.xml',
+        'views/report_views.xml',
+        'report/expense_receipt_report.xml',
+        'report/printable_reports.xml',
+        'views/dashboard_views.xml',
+        'views/menus.xml',
+    ],
+    'application': True,
+    'installable': True,
+    'auto_install': False,
+    'price': 99,
+    'currency': 'USD',
+}
